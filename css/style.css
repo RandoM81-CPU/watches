@@ -1,0 +1,553 @@
+* {
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    cursor: pointer; }
+
+body {
+  background-color: black;
+  color: white; }
+
+.header_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 44px;
+  height: 100%; }
+  .header_info a {
+    color: grey; }
+
+.info {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 10px 0; }
+  .info img {
+    padding: 0 10px 0 0; }
+
+.login {
+  margin: 10px 0 10px 10px; }
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0F0F0F; }
+  .header_nav .horizontal_nav ul {
+    height: 90px; }
+    .header_nav .horizontal_nav ul li {
+      font-size: large;
+      display: inline-block;
+      width: 140px;
+      text-align: center;
+      line-height: 5em; }
+  .header_nav .burger {
+    cursor: pointer;
+    background-color: #0F0F0F;
+    display: none; }
+    .header_nav .burger .vertical_nav {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 25px;
+      color: white;
+      background-color: #0F0F0F;
+      height: 100%;
+      z-index: 2;
+      max-width: 140px;
+      width: 100%; }
+      .header_nav .burger .vertical_nav ul li {
+        padding: 10px 0 10px 0;
+        width: 100%; }
+        .header_nav .burger .vertical_nav ul li:hover {
+          background-color: #191B1C; }
+
+header {
+  font-family: pt-sans, serif;
+  color: gray; }
+  header * {
+    margin: auto !important; }
+
+.background {
+  width: 100%; }
+
+.picture {
+  font-family: pt-sans, serif;
+  background: url("../images/bg.png") no-repeat center center;
+  background-size: cover;
+  height: 810px; }
+  .picture .logo {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    top: 20%;
+    left: 40%;
+    border: 4px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .picture .logo img {
+      border-bottom: 2px white solid; }
+  .picture p {
+    position: relative;
+    top: 30%;
+    text-transform: uppercase;
+    text-align: center; }
+
+.collections {
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; }
+  .collections button {
+    background-color: rgba(28, 28, 28, 0);
+    color: white;
+    padding: 12px 28px 12px 28px;
+    text-transform: uppercase;
+    font-size: 24px; }
+  .collections h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold; }
+
+.new_collection {
+  width: 55%; }
+  .new_collection h2 {
+    margin-top: 60px;
+    text-align: center; }
+  .new_collection .line {
+    margin: 20px auto 0 auto;
+    display: block; }
+  .new_collection .new_watches {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; }
+  .new_collection .swiper {
+    display: none; }
+
+.old_collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%; }
+  .old_collection h2 {
+    font-weight: normal;
+    margin: 10px 30px 30px 30px; }
+  .old_collection .line {
+    margin: 27px 20px 20px 20px; }
+  .old_collection p {
+    margin: 40px; }
+  .old_collection button {
+    cursor: pointer;
+    margin: 30px; }
+    .old_collection button:hover {
+      background-color: white;
+      color: black; }
+
+.photo1 {
+  width: 45%;
+  position: relative; }
+  .photo1 .photo1_bg {
+    width: 100%; }
+  .photo1 h2 {
+    position: absolute;
+    top: 60%;
+    left: 27%; }
+  .photo1 .line {
+    position: absolute;
+    left: 42%;
+    top: 73%; }
+  .photo1 button {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 39.5%; }
+    .photo1 button:hover {
+      background-color: white;
+      color: black; }
+
+.photo2 {
+  width: 45%; }
+
+.item {
+  margin: 10px; }
+  .item .image {
+    background-color: #191B1C;
+    width: 260px;
+    height: 325px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    .item .image img {
+      width: 215px;
+      height: 214px; }
+    .item .image .watch_info {
+      text-align: left; }
+
+.novelties {
+  margin: 120px 0 150px 0;
+  text-align: center; }
+  .novelties .novelties_swiper {
+    display: none; }
+  .novelties h2 {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .novelties .line {
+    margin: 40px; }
+  .novelties .items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1225px;
+    justify-content: center;
+    margin: auto; }
+    .novelties .items .item {
+      margin: 23px;
+      cursor: pointer; }
+      .novelties .items .item .watch_info {
+        text-align: left;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px; }
+
+.brands {
+  padding: 40px 0 40px 0;
+  background-color: #0F0F0F;
+  text-align: center; }
+  .brands img {
+    width: 25%; }
+  .brands h2 {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .brands .line {
+    margin: 40px; }
+  .brands .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .brands .slider {
+    display: none; }
+    .brands .slider .swiper_wrapper {
+      display: flex;
+      justify-content: center; }
+
+.upper_footer {
+  background: url("../images/footer.png") center;
+  max-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .upper_footer div {
+    height: 320px;
+    margin: 40px 31px 100px 31px; }
+    .upper_footer div h3 {
+      text-transform: uppercase;
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin: 80px 0 40px 0; }
+    .upper_footer div p {
+      font-family: PT Sans, serif;
+      font-size: 14px; }
+  .upper_footer .categories {
+    max-width: 420px; }
+    .upper_footer .categories button {
+      margin: 10px 10px 10px 0;
+      background: black;
+      padding: 10px 20px 10px 20px;
+      border: none;
+      color: lightgray;
+      cursor: pointer; }
+  .upper_footer .newsletter form {
+    margin-top: 37px; }
+    .upper_footer .newsletter form input {
+      background: gray;
+      border: none;
+      height: 42px;
+      width: 210px;
+      padding-left: 10px;
+      color: white; }
+      .upper_footer .newsletter form input::placeholder {
+        color: lightgray;
+        font-size: 16px; }
+    .upper_footer .newsletter form button {
+      background: #0F0F0F;
+      border: none;
+      color: white;
+      height: 42px;
+      padding: 10px 20px;
+      cursor: pointer; }
+      .upper_footer .newsletter form button:hover {
+        background: white;
+        color: black; }
+
+.lower_footer {
+  display: flex;
+  justify-content: space-around;
+  background: #0F0F0F;
+  height: 50px;
+  align-items: center; }
+  .lower_footer * {
+    color: lightgray; }
+  .lower_footer p {
+    margin-right: 100px; }
+  .lower_footer a {
+    margin-left: 100px; }
+
+.show {
+  display: inline !important; }
+
+@media only screen and (max-width: 1760px) {
+  .photo1, .photo2 {
+    width: 48%; }
+  .new_collection, .old_collection {
+    width: 52%; } }
+
+@media only screen and (max-width: 1400px) {
+  .collections {
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .photo1, .photo2 {
+    width: 100%; }
+  .old_collection, .new_collection {
+    width: 100%; }
+  .new_collection {
+    margin: 100px 0 180px 0; }
+  .photo1 h2 {
+    left: 37%; }
+  .photo1 .line {
+    left: 46%;
+    top: 68%; }
+  .photo1 button {
+    left: 39.5%;
+    top: 74%;
+    width: 300px; }
+  .old_collection {
+    margin: 140px 0 140px 0;
+    order: 3; }
+  .photo2 {
+    order: 4; }
+  .lower_footer p {
+    margin-right: 350px; }
+  .lower_footer a {
+    margin-left: 350px; } }
+
+@media only screen and (min-width: 850px) and (max-width: 1160px) {
+  .horizontal_nav li {
+    margin: 0 20px 0 20px !important;
+    width: max-content !important; }
+  .picture .logo {
+    left: 35%; }
+  .photo1 h2 {
+    left: 34%; }
+  .photo1 .line {
+    left: 45%;
+    top: 68%; }
+  .photo1 button {
+    left: 37.5%;
+    top: 74%;
+    width: 300px; }
+  .upper_footer p {
+    font-size: 12px; }
+  .upper_footer h3 {
+    margin: 0; }
+  .upper_footer div {
+    margin: 20px 31px 60px 31px; }
+  .upper_footer .newsletter, .upper_footer .about {
+    max-width: 35% !important; }
+  .upper_footer .categories {
+    width: 30%; }
+    .upper_footer .categories button {
+      margin: 5px 5px 5px 0;
+      padding: 5px 10px 5px 10px; }
+  .upper_footer .newsletter form input {
+    height: 35px;
+    width: 150px; }
+  .upper_footer .newsletter form button {
+    height: 35px; }
+  .lower_footer p, .lower_footer a {
+    font-size: 12px; }
+  .brands .items {
+    margin: auto;
+    display: flex;
+    flex-direction: row; } }
+
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+  .horizontal_nav ul {
+    display: flex;
+    align-items: center;
+    font-size: 10px; }
+    .horizontal_nav ul li {
+      margin: 0 10px 0 10px !important;
+      width: max-content !important; }
+  .picture {
+    height: 400px; }
+    .picture .logo {
+      left: 37%;
+      width: 200px;
+      height: 150px; }
+      .picture .logo img {
+        width: 100px;
+        height: 45px; }
+      .picture .logo h2 {
+        font-size: 18px; }
+    .picture p {
+      font-size: 14px; }
+  .new_collection .new_watches {
+    display: none; }
+  .new_collection .swiper {
+    display: block; }
+    .new_collection .swiper .swiper_button {
+      cursor: pointer;
+      color: white !important; }
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px; }
+    .item .image {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .photo1 h2 {
+    font-size: 26px;
+    left: 34%; }
+  .photo1 .line {
+    left: 44%; }
+  .photo1 button {
+    left: 41.5%;
+    width: 160px; }
+  .upper_footer div h3 {
+    margin: 15px 0 15px 0; }
+  .upper_footer .about {
+    width: 40%; }
+    .upper_footer .about p {
+      font-size: 14px; }
+  .upper_footer .categories, .upper_footer .newsletter {
+    width: 30%; }
+  .upper_footer p {
+    font-size: 10px; }
+  .lower_footer {
+    height: 80px; }
+    .lower_footer p {
+      margin-right: 200px; }
+    .lower_footer a {
+      margin-left: 120px; }
+  .brands .items {
+    display: none; }
+  .brands .slider {
+    display: block;
+    position: relative; }
+    .brands .slider .swiper_button {
+      cursor: pointer;
+      color: white !important; }
+    .brands .slider .swiper_slide img {
+      max-width: 100%; } }
+
+@media only screen and (min-width: 365px) and (max-width: 600px) {
+  .header_info .info img {
+    width: 9px;
+    height: 9px; }
+  .header_info .info p {
+    font-size: 9px; }
+  .header_info .login {
+    display: none; }
+  .horizontal_nav {
+    display: none; }
+  .header_nav img {
+    width: 60px;
+    height: 15px; }
+  .header_nav .burger {
+    border: none;
+    display: inline;
+    width: 14px;
+    height: 14px; }
+  .picture .logo {
+    left: 40%;
+    width: 100px;
+    height: 100px; }
+    .picture .logo img {
+      width: 70px;
+      height: 30px; }
+    .picture .logo h2 {
+      font-size: 10px; }
+  .picture p {
+    font-size: 8px; }
+  .collections h2 {
+    font-size: 14px; }
+  .collections .line {
+    width: 60px; }
+  .collections .new_collection {
+    max-height: 390px;
+    margin-top: 0;
+    margin-bottom: 80px; }
+    .collections .new_collection .swiper_button {
+      margin-top: 20px; }
+  .collections .photo1 h2 {
+    left: 32%; }
+  .collections .photo1 .line {
+    left: 43%; }
+  .collections .photo1 button {
+    width: max-content;
+    font-size: 10px;
+    left: 37.5%; }
+  .collections .old_collection p {
+    font-size: 8px; }
+  .collections .old_collection button {
+    width: max-content;
+    font-size: 10px; }
+  .novelties h2 {
+    font-size: 12px; }
+  .novelties .line {
+    width: 80px; }
+  .novelties .items {
+    display: none; }
+  .novelties .novelties_swiper {
+    display: block;
+    position: relative; }
+    .novelties .novelties_swiper .item .image {
+      width: 150px;
+      height: 120px;
+      margin-right: 15px; }
+      .novelties .novelties_swiper .item .image img {
+        width: 90px;
+        height: 90px; }
+    .novelties .novelties_swiper .item .watch_info {
+      font-size: 10px;
+      margin-right: 10px; }
+    .novelties .novelties_swiper .swiper_button {
+      color: white;
+      margin-top: 25px; }
+  .item {
+    max-width: 350px !important;
+    width: 100%;
+    margin-left: 25px; }
+  .upper_footer {
+    display: none; }
+  .lower_footer {
+    height: 50px; }
+    .lower_footer p, .lower_footer a {
+      font-size: 10px;
+      margin: 0; }
+  .item {
+    max-width: 100% !important;
+    margin-left: 0;
+    margin-right: 0; }
+    .item .image {
+      margin-left: 25px;
+      width: 170px;
+      height: 130px; }
+      .item .image img {
+        width: 100px;
+        height: 100px; }
+    .item .watch_info {
+      margin-left: 25px;
+      font-size: 10px;
+      margin-right: 10px; } }
